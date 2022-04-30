@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Hike Here</title>
+</head>
+<body>
+    <div class="container"></div>
+    <h1>Edit Hike</h1>
+    <form action="/hikes" method="post">
+        Name: <input type="text" name="name" placeholder="Name of Hike">
+        Distance: <input type="text" name="distance" placeholder="miles..">
+        Comments: <input type="text" name="comments" placeholder="Comments..">
+        IMG URL: <input type="text" name="img" placeholder="Enter Image URL Here"
+        <input type="checkbox" name="completed" <%= Hike.Completed && "checked" %>>
+        <input type="submit" value="Update!" />
+</form>   
+</div>
+</body>
+</html>

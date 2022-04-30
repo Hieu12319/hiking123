@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>Hike List</title>
+    <style type="text/css">
+   .container {
+       text-align: center;
+   }
+   body{
+       background-color: brown;
+   }
+
+   </style>
+    <div class="container">
+        <h1> Add Your New hike!</h1>
+    <h2>
+        
+    <form action="/hikes" method="post">
+        Name: <input type="text" name="name" placeholder="name"><br/>
+        Distance:<input type="text" name="distance" placeholder="miles"><br/> 
+       Comments: <input type="text" name="comments" placeholder="Add Something about this hike."><br/>
+       img: <input type="text" name="img" placeholder="Add Image Url for your Hike"><br/>
+       Completed: <input type="checkbox" name="completed" /><br />
+       
+         <button type="submit" value="Add Hike">Add Hike</button>
+    </form>
+
+ 
+  
+</div>
